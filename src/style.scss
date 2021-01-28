@@ -1,4 +1,24 @@
 $font_color: #f7f7f7;
+$orange_color: #CD6326;
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F,
+    U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/openSans.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 .wrapper {
   width: 1200px;
@@ -7,9 +27,13 @@ $font_color: #f7f7f7;
 .header {
   width: 100%;
   background-color: aqua;
+  &__content {
+    width: 100%;
+  }
 }
 
-body {
+body,
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,13 +41,14 @@ body {
 
 .logo,
 .nav__ul,
-.header {
+.header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo__text {
+  padding-left: 15px;
   color: $font_color;
   font-family: 'Roboto';
   font-style: normal;
@@ -47,5 +72,24 @@ body {
   }
   &__ul {
     list-style-type: none;
+    padding-left: 0;
+  }
+  &__button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid $orange_color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(23, 0, 0, 0);
+    outline: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: $font_color;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

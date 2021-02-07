@@ -41,7 +41,8 @@ $background_main: #02160b;
 .latest-articles,
 .header,
 .wrapper,
-.main {
+.main,
+.get-notified {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,7 +193,7 @@ $background_main: #02160b;
 .latest-articles {
   width: 100%;
   padding-top: 81px;
-  padding-bottom: 239px;
+  padding-bottom: 200px;
   background-color: $background;
   &__content {
     width: 100%;
@@ -283,5 +284,60 @@ $background_main: #02160b;
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.get-notified {
+  width: 100%;
+  background-color: $background;
+  padding-top: 7px;
+  padding-bottom: 239px;
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    color: $font_dark;
+  }
+  &__form {
+    width: 660px;
+    height: 60px;
+    display: flex;
+    margin-top: 35px;
+  }
+  &__email {
+    width: 532px;
+    padding-left: 15px;
+    outline: none;
+    color: $font_grey;
+    border: solid $font_grey;
+    background-color: $background;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+  }
+  &__submit {
+    width: 120px;
+    height: 60px;
+    background-color: $orange_color;
+    color: $font_color;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    border: 1px solid $orange_color;
+    border-radius: 0px 5px 5px 0px;
   }
 }

@@ -6,6 +6,7 @@ $background: #cccccc;
 $font_dark: #333333;
 $font_grey: #666666;
 $background_main: #02160b;
+$footer_bckgr: #000000;
 
 @font-face {
   font-family: 'Roboto';
@@ -42,7 +43,8 @@ $background_main: #02160b;
 .header,
 .wrapper,
 .main,
-.get-notified {
+.get-notified,
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +80,7 @@ $background_main: #02160b;
 
 .nav {
   width: 480px;
+  padding-left: 15px;
   &__blog,
   &__contacts {
     text-decoration: none;
@@ -318,7 +321,7 @@ $background_main: #02160b;
     padding-left: 15px;
     outline: none;
     color: $font_grey;
-    border: solid $font_grey;
+    border: 1px solid $font_grey;
     background-color: $background;
     font-family: 'Roboto';
     font-style: normal;
@@ -338,6 +341,29 @@ $background_main: #02160b;
     font-size: 23px;
     line-height: 27px;
     border: 1px solid $orange_color;
+    outline: none;
     border-radius: 0px 5px 5px 0px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: url('../assets/footer.jpg') no-repeat center;
+  background-color: $footer_bckgr;
+  box-shadow: inset -150px 0px 150px $footer_bckgr;
+  padding-top: 127px;
+  padding-bottom: 127px;
+  border-radius: 0px;
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__socials {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

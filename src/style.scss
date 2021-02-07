@@ -330,6 +330,7 @@ $footer_bckgr: #000000;
     line-height: 27px;
   }
   &__submit {
+    cursor: pointer;
     width: 120px;
     height: 60px;
     background-color: $orange_color;
@@ -343,6 +344,12 @@ $footer_bckgr: #000000;
     border: 1px solid $orange_color;
     outline: none;
     border-radius: 0px 5px 5px 0px;
+    &:hover {
+      background-color: $light_orange_color;
+    }
+    &:active {
+      background-color: $dark_orange_color;
+    }
   }
 }
 
